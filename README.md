@@ -18,7 +18,7 @@ There is a bug that sometimes happens with the webcam window, where it won't aut
 Be sure to display your hand quite close to your camera as this will improve the odds of the model determining the shape correctly. The match ends when you or the computer wins 3 times, if you want to change that you'll find the number at the beginning of the while loop in the 'main()' function. Also, your hand shape should be more vertical than when you play with someone in real life so that the model can differentiate the hand shapes. 
 
 
-
+### **How to run**
 
 When you're ready just run the python file --> python camera_rps.py in your terminal
 
