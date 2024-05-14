@@ -15,9 +15,9 @@ class RPS:
     self.computerWins = 0
 
   def get_computer_choice():
-    '''
+    """
     This gets the computer's choice for the game and returns it as a string
-    '''
+    """
     actions = ['rock', 'paper', 'scissors']
     return random.choice(actions)
   
