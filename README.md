@@ -8,9 +8,9 @@ I used Google's Teachable Machine to create a model to determine whether the use
 ### **Requirements**
 There is a requirements file included that has all the dependencies you'll need to run this. Once you've created your conda environment (if you're using one), run the following command in your terminal --> pip install -r requirements.txt
 If you want to install the dependencies manually, you will need:
-*opencv-python
-*ipykernel
-*tensorflow (version 2.15.0)
+* opencv-python
+* ipykernel
+* tensorflow (version 2.15.0)
 
 ### **Other Notes**
 There is a bug that sometimes happens with the webcam window, where it won't automatically show after the first round. You'll have to click on the terminal in order to press enter and progress the rounds. When you do this the webcam window will be behind VSCode (or whichever interpreter you're using). You'll have the timer counting down in the terminal before the image is taken anyway, so you should be fine!
