@@ -2,4 +2,17 @@
 
 This program uses Google's teachable machine visual learning model to create a rock, paper, scissors game where the player uses their webcam to play against the computer.
 
-I used Google's Teachable Machine to create a model to determine whether the user is displaying rock, paper or scissors. The counter-part of the game where the computer chooses which one to throw out was written in python, I created a list with the three options and then used the random module to choose an option everytime the game is played.
+I used Google's Teachable Machine to create a model to determine whether the user is displaying rock, paper or scissors. The counter-part of the game where the computer chooses which one to throw out was written in python. The way it works, when you run the file it will explain the rules to you, then after you press enter there will be a 3 second timer with a countdown in the terminal before your final image is taken to be run through the keras model.
+
+There is a requirements file included that has all the dependencies you'll need to run this. Once you've created your conda environment (if you're using one), run the following command in your terminal --> pip install -r requirements.txt
+
+There is an issue with the webcam window, where it won't automatically show after the first round. You'll have to click on the terminal in order to press enter and progress the rounds. When you do this the webcam window will be behind VSCode (or whichever interpreter you're using). You'll have the timer counting down in the terminal before the image is taken anyway, so you should be fine!
+
+Be sure to display your hand quite close to your camera as this will improve the odds of the model determining the shape correctly. The match ends when you or the computer wins 3 times, if you want to change that you'll find the number at the beginning of the while loop in the 'main()' function. The picture below should give you an idea of how close your hand should be.
+
+PICTURE
+
+When you're ready just run the python file --> python camera_rps.py.
+
+Have fun!
+
