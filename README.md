@@ -29,7 +29,10 @@ If you want to install the dependencies manually, you will need:
 ### **Contributing** 
 To contribute create a pull request on a new branch detailing the fix. All contributions are subject to review by the repository owner. To report bugs, please create a new [issue](https://github.com/shay-94/Rock-Paper-Scissors/issues)
 
- #### Current Issues 
+### **Future Improvements** 
+The success rate of the `keras model` in determining the user's choice is currently around 60%, resulting in times where the user will see a different choice reflected in the match outcome. As a way of preventing errors like this from occuring, a confidence threshold will be added. The check will be done on the number from the `keras model` matrix to ensure the model is at least 70% sure of the shape the user is choosing.
+
+#### Current Issues 
  #1 [Bug with Webcam Window](https://github.com/shay-94/Rock-Paper-Scissors/issues/1#issue-2323301082)
 
 
