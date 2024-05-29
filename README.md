@@ -1,26 +1,36 @@
-## Rock-Paper-Scissors
+# Rock Paper Scissors
+Using Google's Teachable Machine, a model was created to determine whether the user is displaying rock, paper or scissors. The counter-part of the game where the computer chooses a shape at random to throw out was written in python. Upon executing the `camera_rps.py` script, the rules of the game will be explained to the end user, afterwards, the user will be prompted to press the enter key on their keyboard.
 
-### **Introduction**
-This program uses Google's teachable machine visual learning model to create a rock, paper, scissors game where the player uses their webcam to play against the computer.
+There will be a 3 second timer with a countdown in the terminal before the final image is taken to be run through the `keras model`.
+### **Prerequisites** 
+- [Anaconda3](https://docs.anaconda.com/) or Miniconda
+- Python 3.8 
+- A Video Camera
+ ### **Installation** 
+ Clone the repository:
+ 
+ ``` git clone https://github.com/shay-94/Rock-Paper-Scissors.git ```
 
-I used Google's Teachable Machine to create a model to determine whether the user is displaying rock, paper or scissors. The counter-part of the game where the computer chooses a shape at random to throw out was written in python. The way it works, when you run the file it will explain the rules to you, then after you press enter there will be a 3 second timer with a countdown in the terminal before your final image is taken to be run through the keras model.
+Run the following command below to create the conda environment used for the project: 
 
-### **Requirements**
-There is a requirements file included that has all the dependencies you'll need to run this. Once you've created your conda environment (if you're using one), run the following command in your terminal --> pip install -r requirements.txt
+``` conda env create -f environment.yml ```
+
+ ``` # environment.yml name: rps channels: - defaults dependencies: - python=3.8.0 - pip=23.3.1 ```
+ 
+There is a requirements file included, which includes the dependencies needed to run the project. run the following command in your terminal to install the dependencies for this project:
+
+ ``` pip install -r requirements.txt ``` 
+
 If you want to install the dependencies manually, you will need:
-* opencv-python
-* ipykernel
-* tensorflow (version 2.15.0)
+ - opencv-python
+ - ipykernel
+ - tensorflow (version 2.15.0)
 
-### **Other Notes**
-There is a bug that sometimes happens with the webcam window, where it won't automatically show after the first round. You'll have to click on the terminal in order to press enter and progress the rounds. When you do this the webcam window will be behind VSCode (or whichever interpreter you're using). You'll have the timer counting down in the terminal before the image is taken anyway, so you should be fine!
+### **Contributing** 
+To contribute create a pull request on a new branch detailing the fix. All contributions are subject to review by the repository owner. To report bugs, please create a new [issue](https://github.com/shay-94/Rock-Paper-Scissors/issues)
 
-Be sure to display your hand quite close to your camera as this will improve the odds of the model determining the shape correctly. The match ends when you or the computer wins 3 times, if you want to change that you'll find the number at the beginning of the while loop in the 'main()' function. Also, your hand shape should be more vertical than when you play with someone in real life so that the model can differentiate the hand shapes. 
+ #### Current Issues 
+ #1 [Bug with Webcam Window](https://github.com/shay-94/Rock-Paper-Scissors/issues/1#issue-2323301082)
 
 
-### **How to run**
-
-When you're ready just run the python file --> python camera_rps.py in your terminal
-
-Have fun!
 
